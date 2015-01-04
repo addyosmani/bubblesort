@@ -17,7 +17,7 @@ function makeRandomArray() {
 }
 
 function desc(a, b) {
-  return b < a;
+  return b - a;
 }
 
 describe('bubblesort node module', function () {
