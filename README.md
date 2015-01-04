@@ -2,7 +2,7 @@
 
 > Bubble Sort
 
-[Bubble Sort](http://en.wikipedia.org/wiki/Bubble_sort) implementation wth O(n^2) complexity loosely based on [JavaScript Algorithms](https://github.com/mgechev/javascript-algorithms).
+[Bubble Sort](http://en.wikipedia.org/wiki/Bubble_sort) implementation wth O(n^2) complexity based on [JavaScript Algorithms](https://github.com/mgechev/javascript-algorithms).
 
 > Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, 
 compares each pair of adjacent items and swaps them if they are in the wrong order. 
