@@ -6,7 +6,7 @@ function comparator(a, b) {
 
 /**
  * Bubble Sort with O(n^2) complexity
- * @param {Array} arr
+ * @param {Array} input array
  * @param {Function} comparator
  * @returns {Array} bubble sorted array
  */

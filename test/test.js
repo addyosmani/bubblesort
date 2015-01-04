@@ -27,17 +27,17 @@ describe('bubblesort node module', function () {
   });
 
   it('should work with (ascending) sorted arrays', function () {
-    assert.deepEqual(bubblesort([3,1,4,1,5,9,2,6,5,4]), [1,1,2,3,4,4,5,5,6,9]);
-    assert.deepEqual(bubblesort([9,2,8,6,1,3]), [1,2,3,6,8,9]);
-    assert.deepEqual(bubblesort([5,2,2,6,1,3]), [1,2,2,3,5,6]);
-    assert.deepEqual(bubblesort([5,2,4,6,1,3]), [1,2,3,4,5,6]);
-    assert.deepEqual(bubblesort([0,0,0,0,0,-1]), [-1,0,0,0,0,0]);
+    assert.deepEqual(bubblesort([3, 1, 4, 1, 5, 9, 2, 6, 5, 4]), [1, 1, 2, 3, 4, 4, 5, 5, 6, 9]);
+    assert.deepEqual(bubblesort([9, 2, 8, 6, 1, 3]), [1, 2, 3, 6, 8, 9]);
+    assert.deepEqual(bubblesort([5, 2, 2, 6, 1, 3]), [1, 2, 2, 3, 5, 6]);
+    assert.deepEqual(bubblesort([5, 2, 4, 6, 1, 3]), [1, 2, 3, 4, 5, 6]);
+    assert.deepEqual(bubblesort([0, 0, 0, 0, 0, -1]), [-1, 0, 0, 0, 0, 0]);
   });
 
   it('should work with (descending) sorted arrays', function () {
-    assert.deepEqual(bubblesort([4,2,2,6,1,3], desc), [6,4,3,2,2,1]);
-    assert.deepEqual(bubblesort([0,0,0,0,0,1], desc), [1,0,0,0,0,0]);
-    assert.deepEqual(bubblesort([0,0,0,0,0,-1], desc), [0,0,0,0,0,-1]);
+    assert.deepEqual(bubblesort([4, 2, 2, 6, 1, 3], desc), [6, 4, 3, 2, 2, 1]);
+    assert.deepEqual(bubblesort([0, 0, 0, 0, 0, 1], desc), [1, 0, 0, 0, 0, 0]);
+    assert.deepEqual(bubblesort([0, 0, 0, 0, 0, -1], desc), [0, 0, 0, 0, 0, -1]);
   });
 
   it('should work with random non-sorted arrays', function () {
