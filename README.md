@@ -38,6 +38,27 @@ bubblesort([5,2,2,6,1,3], comparator);
 
 bubblesort([0,0,0,0,0,-1], comparator);
 // => [0,0,0,0,0,-1]
+
+// Ascending sort arrays of objects
+
+var people = [
+  {name: 'Sindre', age: 30, place: 2},
+  {name: 'Passy', age: 25, place: 1},
+  {name: 'Stephen', age: 40, place: 4},
+  {name: 'Matt', age: 35, place: 3}
+];
+
+function comparePeople(a, b) { return a.age - b.age };
+
+bubblesort(people, comparePeople);
+/*
+=> [
+  {"name": 'Passy', "age": 25, "place": 1},
+  {"name": 'Sindre', "age": 30, "place": 2},
+  {"name": 'Matt', "age": 35, "place": 3},
+  {"name": 'Stephen', "age": 40, "place": 4}
+]
+*/
 ```
 
 ## License
