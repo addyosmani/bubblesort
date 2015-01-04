@@ -31,7 +31,7 @@ bubblesort([5,2,4,6,1,3]);
 
 // Descending order
 
-function comparator(a, b) { return b < a; }
+function comparator(a, b) { return b - a; }
 
 bubblesort([5,2,2,6,1,3], comparator);
 // => [6,5,3,2,2,1]
