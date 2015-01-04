@@ -4,6 +4,9 @@
 
 [Bubble Sort](http://en.wikipedia.org/wiki/Bubble_sort) implementation wth O(n^2) complexity loosely based on [JavaScript Algorithms](https://github.com/mgechev/javascript-algorithms).
 
+> Bubble sort is a simple sorting algorithm that repeatedly steps through the list to be sorted, 
+compares each pair of adjacent items and swaps them if they are in the wrong order. 
+
 ## Install
 
 ```sh
@@ -28,10 +31,12 @@ bubblesort([5,2,4,6,1,3]);
 
 // Descending order
 
-bubblesort([5,2,2,6,1,3], 'desc');
+function comparator(a, b) { return b < a; }
+
+bubblesort([5,2,2,6,1,3], comparator);
 // => [6,5,3,2,2,1]
 
-bubblesort([0,0,0,0,0,-1], 'desc');
+bubblesort([0,0,0,0,0,-1], comparator);
 // => [0,0,0,0,0,-1]
 ```
 

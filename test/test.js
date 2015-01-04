@@ -16,6 +16,9 @@ function makeRandomArray() {
   return result;
 }
 
+function desc(a, b) {
+  return b < a;
+}
 
 describe('bubblesort node module', function () {
 
@@ -32,9 +35,9 @@ describe('bubblesort node module', function () {
   });
 
   it('should work with (descending) sorted arrays', function () {
-    assert.deepEqual(bubblesort([4,2,2,6,1,3], 'desc'), [6,4,3,2,2,1]);
-    assert.deepEqual(bubblesort([0,0,0,0,0,1], 'desc'), [1,0,0,0,0,0]);
-    assert.deepEqual(bubblesort([0,0,0,0,0,-1], 'desc'), [0,0,0,0,0,-1]);
+    assert.deepEqual(bubblesort([4,2,2,6,1,3], desc), [6,4,3,2,2,1]);
+    assert.deepEqual(bubblesort([0,0,0,0,0,1], desc), [1,0,0,0,0,0]);
+    assert.deepEqual(bubblesort([0,0,0,0,0,-1], desc), [0,0,0,0,0,-1]);
   });
 
   it('should work with random non-sorted arrays', function () {
