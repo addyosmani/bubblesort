@@ -63,7 +63,7 @@ bubblesort(people, comparePeople);
 
 ## License
 
-MIT © [Addy Osmani](addyosmani.com)
+MIT © [Addy Osmani](http://addyosmani.com)
 
 
 [npm-url]: https://npmjs.org/package/bubblesort
