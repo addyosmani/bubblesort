@@ -2,6 +2,12 @@
 'use strict';
 var assert = require('assert');
 var bubblesort = require('../');
+var people = [
+  {name: 'Sindre', age: 30, place: 2},
+  {name: 'Passy', age: 25, place: 1},
+  {name: 'Stephen', age: 40, place: 4},
+  {name: 'Matt', age: 35, place: 3}
+];
 
 function makeRandomArray() {
 
@@ -18,6 +24,10 @@ function makeRandomArray() {
 
 function desc(a, b) {
   return b - a;
+}
+
+function objComparator(a, b) {
+  return a.age - b.age;
 }
 
 describe('bubblesort node module', function () {
@@ -38,6 +48,15 @@ describe('bubblesort node module', function () {
     assert.deepEqual(bubblesort([4, 2, 2, 6, 1, 3], desc), [6, 4, 3, 2, 2, 1]);
     assert.deepEqual(bubblesort([0, 0, 0, 0, 0, 1], desc), [1, 0, 0, 0, 0, 0]);
     assert.deepEqual(bubblesort([0, 0, 0, 0, 0, -1], desc), [0, 0, 0, 0, 0, -1]);
+  });
+
+  it('should work with (ascending) arrays of objects', function () {
+    assert.deepEqual(bubblesort(people, objComparator), [
+        {"name": 'Passy', "age": 25, "place": 1},
+        {"name": 'Sindre', "age": 30, "place": 2},
+        {"name": 'Matt', "age": 35, "place": 3},
+        {"name": 'Stephen', "age": 40, "place": 4}]
+    );
   });
 
   it('should work with random non-sorted arrays', function () {
