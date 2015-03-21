@@ -1,4 +1,4 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 
 > Bubble Sort
 
@@ -70,5 +70,5 @@ MIT © [Addy Osmani](http://addyosmani.com)
 [npm-image]: https://badge.fury.io/js/bubblesort.svg
 [travis-url]: https://travis-ci.org/addyosmani/bubblesort
 [travis-image]: https://travis-ci.org/addyosmani/bubblesort.svg?branch=master
-[daviddm-url]: https://david-dm.org/addyosmani/bubblesort.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/addyosmani/bubblesort
+[daviddm-url]: https://david-dm.org/addyosmani/bubblesort
+[daviddm-image]: https://david-dm.org/addyosmani/bubblesort.svg?theme=shields.io
