@@ -1,7 +1,7 @@
 'use strict';
 
 function comparator(a, b) {
-  return a - b;
+  return a < b ? -1 : a > b;
 }
 
 /**
