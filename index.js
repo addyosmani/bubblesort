@@ -13,14 +13,17 @@ function comparator(a, b) {
 module.exports = function (arr, cmp) {
   cmp = cmp || comparator;
   var temp;
-  for (var i = 0, l = arr.length; i < l; i++) {
-    for (var j = i; j > 0; j--) {
-      if (cmp(arr[j], arr[j - 1]) < 0) {
+  var numSwaps = 0;
+  for (var i = 0, l = arr.length - 1; i < l; i++) {
+    for (var j = 0; j < l - i; j++) {
+      if (cmp(arr[j+1], arr[j]) < 0) {
+        numSwaps++;
         temp = arr[j];
-        arr[j] = arr[j - 1];
-        arr[j - 1] = temp;
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
       }
     }
+    if(!numSwaps) break;
   }
   return arr;
 };
