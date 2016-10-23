@@ -23,7 +23,9 @@ module.exports = function (arr, cmp) {
         arr[j + 1] = temp;
       }
     }
-    if(!numSwaps) break;
+    if(!numSwaps) {
+      break;
+    }
   }
   return arr;
 };
